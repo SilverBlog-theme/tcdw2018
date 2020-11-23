@@ -1,0 +1,28 @@
+{% include system_config.Theme+"/include/header.html" %}
+<body class="body-index">
+{% include system_config.Theme+"/include/nav.html" %}
+<section class="index-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ template_config.Cover_Image }})">
+    <div class="info">
+        <div class="wrap">
+            <h1>{{ system_config.Project_Name }}</h1>
+            <p>{{ system_config.Project_Description }}</p>
+        </div>
+    </div>
+    <div class="avatar">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url({{ system_config.Author_Image }})"></div>
+    </div>
+</section>
+<main>
+    {%- for page_info in page_list -%}
+    <article>
+        <h1 class="title"><a href="/post/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a></h1>
+        <span class="time">{{ page_info.time }}</span>
+        <div class="content">{{ page_info.excerpt }}</div>
+    </article>
+    {%- endfor -%}
+    <div class="nav wrap">
+        {% if now_page!=1 %}<a class="prev" href="/index/p/{{ now_page - 1 }}">{{i18n|get_i18n_value("prev")}}</a>{% endif %}
+        {% if now_page!=page_row and page_row !=1 %}<a class="next" href="/index/p/{{ now_page + 1 }}">{{i18n|get_i18n_value("next")}}</a>{% endif %}
+    </div>
+</main>
+{% include system_config.Theme+"/include/footer.html" %}

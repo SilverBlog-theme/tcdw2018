@@ -1,0 +1,35 @@
+    <header class="top">
+        <div class="wrap">
+            <div class="mobile-menu">
+                <a id="mobile-menu-btn" title="{{i18n|get_i18n_value("menu")}}"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="site-title large-font"><a href="/">{{ system_config.Project_Name }}</a></div>
+            <ul>
+                {%- for item in menu_list -%}
+                    {%- if "absolute" in item -%}
+                        {%- set url = item.absolute -%}
+                    {%- else -%}
+                        {%- set url = "/post/"+item.name -%}
+                    {%- endif -%}
+                    <li><a href="{{url}}">{{ item.title }}</a></li>
+                {%- endfor -%}
+            </ul>
+            <div class="rss">
+                <a href="/rss" title="{{i18n|get_i18n_value("subscribe_icon")}}"><i class="fas fa-rss"></i></a>
+            </div>
+        </div>
+    </header>
+    <nav class="mobile-menu mobile-only">
+        <ul>
+            <li><a href="/"><i class="fas fa-fw fa-home"></i>{{i18n|get_i18n_value("home")}}</a></li>
+            {%- for item in menu_list -%}
+                {%- if "absolute" in item -%}
+                    {%- set url = item.absolute -%}
+                {%- else -%}
+                    {%- set url = "/post/"+item.name -%}
+                {%- endif -%}
+                <li><a href="{{url}}">{% if "mobile_prefix" in item %}{{ item.mobile_prefix }}{% endif %}{{ item.title }}</a></li>
+            {%- endfor -%}
+            <li><a href="/rss"><i class="fas fa-fw fa-rss"></i>{{i18n|get_i18n_value("subscribe")}}</a></li>
+        </ul>
+    </nav>

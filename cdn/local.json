@@ -1,0 +1,8 @@
+{
+    "bundle.css": "/static/tcdw2018/bundle.css",
+    "bundle.js": "/static/tcdw2018/bundle.js",
+    "bplayer.min.js": "/static/tcdw2018/library/bplayer/bplayer.min.js",
+    "bp_init.js": "/static/tcdw2018/library/bplayer/bp_init.js",
+    "highlight.min.js": "/static/tcdw2018/library/highlight.js/highlight.min.js",
+    "font-awesome.min.css": "/static/tcdw2018/library/font-awesome.css/css/font-awesome.min.css"
+}

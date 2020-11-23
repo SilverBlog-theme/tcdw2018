@@ -1,0 +1,60 @@
+{
+    "name": "tcdw2018",
+    "description": "tcdw 2018 style for SilverBlog!",
+    "author": "tcdw <tcdw2011@gmail.com>",
+    "bug": "https://github.com/silverblog-theme/tcdw2018/issues",
+    "license": "MIT",
+    "homepage": "https://github.com/silverblog-theme/tcdw2018",
+    "download": [
+      {
+        "url": "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css",
+        "path": "font-awesome.css/css",
+        "filename": "font-awesome.min.css"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/FontAwesome.otf",
+        "path": "font-awesome.css/fonts",
+        "filename": "FontAwesome.otf"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.eot",
+        "path": "font-awesome.css/fonts",
+        "filename": "fontawesome-webfont.eot"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.svg",
+        "path": "font-awesome.css/fonts",
+        "filename": "fontawesome-webfont.svg"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.ttf",
+        "path": "font-awesome.css/fonts",
+        "filename": "fontawesome-webfont.ttf"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.woff",
+        "path": "font-awesome.css/fonts",
+        "filename": "fontawesome-webfont.woff"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.woff2",
+        "path": "font-awesome.css/fonts",
+        "filename": "fontawesome-webfont.woff2"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/highlight.js@9.13.1/lib/highlight.min.js",
+        "path": "highlight.js",
+        "filename": "highlight.min.js"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/bplayer@1.0.7/dist/bplayer.min.js",
+        "path": "bplayer",
+        "filename": "bplayer.min.js"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/npm/bplayer@1.0.7/dist/bp_init.js",
+        "path": "bplayer",
+        "filename": "bp_init.js"
+      }
+    ]
+  }

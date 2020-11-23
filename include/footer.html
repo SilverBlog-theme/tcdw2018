@@ -1,0 +1,14 @@
+<footer>
+    <div class="wrap clearfix">
+        <span class="left">© {{ now_time|format_datetime("%Y") }} <a href="/">{{ system_config.Project_Name }}</a></span>
+        <span class="right">Powered by <a href="http://github.com/SilverBlogTeam/SilverBlog" target="_blank">SilverBlog</a></span>
+    </div>
+</footer>
+<script src="{{static_file['bundle.js']}}"></script>
+<script src="{{static_file['bplayer.min.js']}}"></script>
+<script src="{{static_file['bp_init.js']}}"></script>
+<script src="{{static_file['highlight.min.js']}}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{%- include "include/foot.html" ignore missing -%}
+</body>
+</html>

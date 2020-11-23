@@ -1,0 +1,17 @@
+{% include system_config.Theme+"/include/header.html" %}
+<body class="body-page">
+{% include system_config.Theme+"/include/nav.html" %}
+<script>
+    if (document.documentMode) {
+        document.write('<div style="height:70px"></div>');
+    }
+</script>
+<main>
+    <article>
+        <h1 class="title">{{ page_info.title }}</h1>
+        <span class="time">{{ page_info.time }}</span>
+        <div class="content">{{ content|safe }}</div>
+        <section class="comment">{% include "include/comment.html" ignore missing %}</section>
+    </article>
+</main>
+{% include system_config.Theme+"/include/footer.html" %}

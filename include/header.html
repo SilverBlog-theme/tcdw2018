@@ -1,0 +1,22 @@
+{%- if page_info.title=="index" -%}
+    {% set title=system_config.Project_Name %}
+    {% set description=system_config.Project_Description %}
+{%- else -%}
+    {% set title=page_info.title %}
+    {% set description=page_info.excerpt %}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <meta name="theme-color" content="#2196F3">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1">
+    <link href="{{static_file['font-awesome.min.css']}}" rel="stylesheet" type="text/css">
+    <link href="{{static_file['bundle.css']}}" rel="stylesheet" type="text/css">
+    <link rel="alternate" type="application/rss+xml" title="{{ system_config.Project_Name }}" href="/rss">
+    {% include "include/head.html" ignore missing %}
+</head>

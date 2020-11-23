@@ -1,0 +1,8 @@
+{
+    "bundle.css": "/static/tcdw2018/bundle.css",
+    "bundle.js": "/static/tcdw2018/bundle.js",
+    "bplayer.min.js":"https://cdn.jsdelivr.net/npm/bplayer@1.0.7/dist/bplayer.min.js",
+    "bp_init.js": "https://cdn.jsdelivr.net/npm/bplayer@1.0.7/dist/bp_init.js",
+    "highlight.min.js": "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js",
+    "font-awesome.min.css": "https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+}
